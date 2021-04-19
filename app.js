@@ -62,7 +62,7 @@ function changeStatus(book) {
 }
 
 function deleteBook(current) {
-    library.splice(current, current + 1);
+    library.splice(current, 1);
 }
 
 //Some issue maybe
@@ -71,8 +71,8 @@ function findBook(array, title) {
         return;
     }
     let tmp = 0;
-    for (book of array) {
-        if (book.title === title.value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].title === title) {
           return tmp;
         }
         tmp++;
