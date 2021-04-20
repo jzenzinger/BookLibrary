@@ -1,17 +1,93 @@
 .container {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 2em;
-    padding: 3em;
-}
-.row2 {
-    text-align: center;
-    grid-column: 1 / span 2;
-    grid-row: 2;
+  display: grid;
+  margin: auto;
+  width: 80%;
+  font-family: Helvetica;
 }
 
-.row3 {
-    text-align: center;
-    grid-column: 1 / span 3;
-    grid-row: 3;
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 15px 30px;
+  background-color: rgb(146, 23, 218);
+  border: none;
+  border-radius: 0.5em;
+  margin: 1em auto 1em auto;
+  font-size: 1em;
+  color: white;
+  max-width: 8em;
+}
+
+#status {
+  position: relative;
+  padding: 0.8em;
+}
+
+.form-inline button:hover {
+  background-color: rgb(117, 24, 170);
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #7b1eb9;
+  color: white;
+}
+
+table button {
+  padding: 7px 14px;
+  background-color: rgb(143, 143, 143);
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+}
+
+table button:hover {
+    background-color: rgb(107, 106, 107);
 }

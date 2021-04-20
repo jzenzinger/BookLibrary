@@ -4,68 +4,68 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Book Library</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="container">
-            <div class="row1">
-                <div class="twelve column" style="margin-top: 8%;">
-                    <h1>Book Library</h1>
-                    <p>
-                        Book library project from <a href="https://www.theodinproject.com/home">The Odin Project</a>
-                        in which you have to create library to store added books. 
-                    </p>
-                </div>
-            </div>
-            <div class="row2">
-                <form action="">
-                    <div class="five columns">
-                      <label for="name">Title</label>
-                      <input type="text" class="u-full-width" id="title" />
-                    </div>
-                    <div class="five columns">
-                      <label for="author">Author</label>
-                      <input type="text" class="u-full-width" id="author" />
-                    </div>
-                    <div class="two columns">
-                        <label for="author">Pages</label>
-                        <input type="text" class="u-full-width" id="pages" />
-                      </div>
-                    <div class="two columns">
-                      <label for="status">Status</label>
-                      <select name="status" id="status" class="u-full-width">
-                        <option value="read">Read</option>
-                        <option value="not read">Not read</option>
-                        <option value="reading">Reading</option>
-                      </select>
-                    </div>
-                    <input type="submit" value="Add book" class="button-primary" />
-                  </form>
-            </div>
-            <div class="row3">
-                <div class="twelve columns"></div>
-                <table class="twelve columns">
-                  <tr>
-                    <th>Name</th>
-                    <th>Author</th>
-                    <th>Pages</th>
-                    <th>Status</th>
-                    <th></th>
-                  </tr>
-                  <tbody id="book-table-body"></tbody>
-                </table>
-              </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Book Library</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="container">
+      <div class="row1">
+        <div class="twelve column" style="margin-top: 8%">
+          <h1>Book Library</h1>
+          <p>
+            Book library project from
+            <a href="https://www.theodinproject.com/home">The Odin Project</a>
+            in which you have to create library to store added books.
+          </p>
         </div>
-        
-        <script src="./app.js" async defer></script>
-    </body>
+      </div>
+      <div class="row2">
+        <form class="form-inline">
+          <label for="name">Title</label>
+          <input type="text" class="u-full-width" id="title" />
+
+          <label for="author">Author</label>
+          <input type="text" class="u-full-width" id="author" />
+
+          <label for="author">Pages</label>
+          <input type="text" class="u-full-width" id="pages" />
+
+          <label for="status">Status</label>
+          <select name="status" id="status" class="u-full-width">
+            <option value="read">Read</option>
+            <option value="not read">Not read</option>
+            <option value="reading">Reading</option>
+          </select>
+
+          <button type="submit" class="button-primary">ADD</button>
+        </form>
+      </div>
+      <div class="row3">
+        <div class="twelve columns"></div>
+        <table class="twelve columns">
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          <tbody id="book-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./app.js" async defer></script>
+  </body>
 </html>
