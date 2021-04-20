@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgb(228, 228, 228), #929292);
+}
+
 .container {
   display: grid;
   margin: auto;
@@ -15,6 +21,7 @@
 /* Add some margins for each label */
 .form-inline label {
   margin: 5px 10px 5px 0;
+  font-size: 1em;
 }
 
 /* Style the input fields */
@@ -23,7 +30,13 @@
   margin: 5px 10px 5px 0;
   padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.form-inline input:hover {
+  transition: 0.25s;
+  box-shadow: 0.3em 0.6em 1em #9292928f;
 }
 
 /* Style the submit button */
@@ -36,11 +49,15 @@
   font-size: 1em;
   color: white;
   max-width: 8em;
+  box-shadow: 0.4em 0.8em 1.5em #929292;
+  letter-spacing: 0.1em;
 }
 
 #status {
-  position: relative;
   padding: 0.8em;
+  max-width: 8em;
+  border: none;
+  border-radius: 0.2em;
 }
 
 .form-inline button:hover {
